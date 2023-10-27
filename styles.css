@@ -213,3 +213,36 @@ nav a.active {
     list-style: none; 
     padding: 0; 
 }
+@media only screen and (max-width: 992px) {
+    .header-content, .footer-content, .contact-container, .content-container, main, .physical-activities {
+        max-width: 95%;
+    }
+
+    .featured-activities {
+        flex-direction: column;
+    }
+
+    .activity {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-content, .footer-content, .contact-container, .content-container, main, .physical-activities {
+        padding: 0 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        margin-bottom: 10px;
+    }
+}
