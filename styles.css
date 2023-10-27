@@ -275,3 +275,25 @@ nav a.active {
         margin-bottom: 20px;
     }
 }
+@media (max-width: 768px) {
+    .btn {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-item h3 {
+        font-size: 20px; /* Reduced font size */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content-item img {
+        margin-bottom: 15px;
+    }
+
+    .content-item {
+        padding: 15px; /* Reduced padding */
+    }
+}
+
