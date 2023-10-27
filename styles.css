@@ -62,7 +62,7 @@ nav a:hover::after {
 }
 
 #site-logo {
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
 }
 
