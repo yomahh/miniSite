@@ -296,4 +296,10 @@ nav a.active {
         padding: 15px; /* Reduced padding */
     }
 }
+@media (max-width: 768px) {
+    .btn {
+        margin-bottom: 15px;
+        padding: 10px 15px;  // Adjust the padding as per your liking
+    }
+}
 
