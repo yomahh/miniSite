@@ -66,8 +66,6 @@ nav a:hover::after {
     height: auto;
 }
 
-/* Responsive styles */
-
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -93,7 +91,6 @@ nav a:hover::after {
     }
 }
 
-/* Footer styles for all screen sizes */
 footer {
     background-color: #333;
     color: #f8f8f8;
@@ -115,7 +112,6 @@ footer p {
     font-size: 16px;
 }
 
-/* Contact form styles for all screen sizes */
 .contact-container {
     max-width: 1200px;
     margin: 60px auto 80px;
@@ -156,14 +152,12 @@ footer p {
     background-color: #555;
 }
 
-/* Content container styles for all screen sizes */
 .content-container {
     max-width: 800px;
     margin: 60px auto;
     padding: 0 20px;
 }
 
-/* Testimonial styles for all screen sizes */
 .testimonial {
     background-color: #fff;
     padding: 20px;
@@ -182,7 +176,6 @@ footer p {
     color: #555;
 }
 
-/* Main content container styles for all screen sizes */
 main {
     max-width: 1200px;
     margin: 40px auto;
@@ -190,7 +183,6 @@ main {
     text-align: center;
 }
 
-/* Intro section styles for all screen sizes */
 .intro-section {
     background: #f4f4f4;
     padding: 50px 0;
@@ -198,17 +190,15 @@ main {
     margin-bottom: 40px;
 }
 
-/* Featured activities container styles for all screen sizes */
 .featured-activities {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-/* Activity card styles for all screen sizes */
 .activity {
     flex: 1;
-    max-width: calc(50% - 20px); /* Adjust to two columns on smaller screens */
+    max-width: calc(50% - 20px);
     background: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -243,12 +233,45 @@ main {
     background-color: #6a1bb2;
 }
 
-/* Navigation link active state for all screen sizes */
 nav a.active {
     font-weight: bold;
     text-decoration: underline;
 }
+
 .about-section ul {
-    list-style: none; 
-    padding: 0; 
+    list-style: none;
+    padding: 0;
+}
+
+.content-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.content-item {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.content-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.content-item h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .content-item img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
