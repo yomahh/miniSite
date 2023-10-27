@@ -1,4 +1,3 @@
-/* Common styles for all screen sizes */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -7,7 +6,6 @@ body {
     background-color: #f8f8f8;
 }
 
-/* Header styles for all screen sizes */
 header {
     background-color: #fff;
     padding: 10px 0;
@@ -23,9 +21,18 @@ header {
     padding: 0 20px;
 }
 
-#site-logo {
-    max-width: 150px;
-    height: auto;
+#menuToggle {
+    display: none; 
+}
+
+.menu-icon {
+    display: none; 
+    cursor: pointer;
+}
+
+.menu-icon:before {
+    content: '☰'; 
+    font-size: 30px;
 }
 
 nav a {
@@ -52,6 +59,38 @@ nav a::after {
 nav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+#site-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+        display: block;
+    }
+
+    #menuToggle:checked + .menu-icon + #site-logo + nav {
+        display: flex;
+    }
 }
 
 /* Footer styles for all screen sizes */
@@ -212,37 +251,4 @@ nav a.active {
 .about-section ul {
     list-style: none; 
     padding: 0; 
-}
-@media only screen and (max-width: 992px) {
-    .header-content, .footer-content, .contact-container, .content-container, main, .physical-activities {
-        max-width: 95%;
-    }
-
-    .featured-activities {
-        flex-direction: column;
-    }
-
-    .activity {
-        max-width: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .header-content, .footer-content, .contact-container, .content-container, main, .physical-activities {
-        padding: 0 10px;
-    }
-
-    nav a {
-        margin: 0 5px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .contact-form {
-        padding: 20px;
-    }
-
-    .contact-form input, .contact-form textarea {
-        margin-bottom: 10px;
-    }
 }
