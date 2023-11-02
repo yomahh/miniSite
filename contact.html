@@ -19,7 +19,7 @@
                 <a href="creative.html">Creative Ventures</a>
                 <a href="testimonials.html">Testimonials</a>
                 <a href="contact.html">Contact Us</a>
-				<a href="about.html">About Us</a>
+                <a href="about.html">About Us</a>
             </nav>
         </div>
     </header>
@@ -27,10 +27,10 @@
     <div class="contact-container">
         <h2>Contact Us</h2>
         <div class="contact-form">
-            <form onsubmit="event.preventDefault(); window.location.href='thank-you.html';">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea rows="4" placeholder="Message" required></textarea>
+            <form action="thank-you.html">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <textarea rows="4" placeholder="Message" name="message" required></textarea>
                 <button type="submit">Submit</button>
             </form>
             
