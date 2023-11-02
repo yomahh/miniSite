@@ -27,7 +27,7 @@
     <div class="contact-container">
         <h2>Contact Us</h2>
         <div class="contact-form">
-            <form action="thank-you.html" method="post">
+            <form onsubmit="event.preventDefault(); window.location.href='thank-you.html';">
                 <input type="text" placeholder="Name" required>
                 <input type="email" placeholder="Email" required>
                 <textarea rows="4" placeholder="Message" required></textarea>
